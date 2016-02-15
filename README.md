@@ -8,7 +8,7 @@
 - [`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.4/Dockerfile)
 - [`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/onjin/alpine-postgres:latest.svg)](https://imagelayers.io/?images=onjin/alpine-postgres:9.3,onjin/alpine-postgres:9.4,onjin/alpine-postgres:9.5
+[![](https://badge.imagelayers.io/onjin/alpine-postgres:latest.svg)](https://imagelayers.io/?images=onjin/alpine-postgres:9.3,onjin/alpine-postgres:9.4,onjin/alpine-postgres:9.5)
 
 # What is PostgreSQL?
 
