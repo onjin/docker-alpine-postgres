@@ -1,0 +1,29 @@
+#vim: set ft=dockerfile:
+FROM alpine:3.3
+
+ENV PG_MAJOR=%%PG_MAJOR%%
+ENV PG_VERSION %%PG_VERSION%%
+
+RUN apk update && apk add glib-lang wget gnupg ca-certificates postgresql && \
+    gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
+    gpg --list-keys --fingerprint --with-colons | sed -E -n -e 's/^fpr:::::::::([0-9A-F]+):$/\1:6:/p' | gpg --import-ownertrust && \
+    wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/1.7/gosu-amd64" && \
+    wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/1.7/gosu-amd64.asc" && \
+    gpg --verify /usr/local/bin/gosu.asc && \
+    rm /usr/local/bin/gosu.asc && \
+    chmod +x /usr/local/bin/gosu && \
+    mkdir -p /docker-entrypoint-initdb.d && \
+    apk del wget gnupg ca-certificates && \
+    rm -rf /var/cache/apk/*
+
+ENV PATH /usr/lib/postgresql/%%PG_MAJOR%%/bin:$PATH
+ENV LANG en_US.utf8
+ENV PGDATA /var/lib/postgresql/data
+VOLUME /var/lib/postgresql/data
+
+COPY docker-entrypoint.sh /
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+EXPOSE 5432
+CMD ["postgres"]

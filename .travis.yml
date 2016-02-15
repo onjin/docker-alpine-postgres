@@ -1,0 +1,22 @@
+language: bash
+services: docker
+
+env:
+  - VERSION=9.4
+
+install:
+  - git clone https://github.com/docker-library/official-images.git ~/official-images
+
+before_script:
+  - env | sort
+  - cd "$VERSION"
+  - image="alpine-postgres:$VERSION"
+
+script:
+  - docker build -t "$image" .
+  - ~/official-images/test/run.sh "$image"
+
+after_script:
+  - docker images
+
+# vim:set et ts=2 sw=2:
