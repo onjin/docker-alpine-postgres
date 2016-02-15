@@ -1,4 +1,6 @@
-# Minimal PostgreSQL images based on https://hub.docker.com/_/alpine/ Linux
+# Minimal PostgreSQL images based on Alpine Linux
+
+- https://hub.docker.com/_/alpine/
 
 # Supported tags and respective `Dockerfile` links
 
