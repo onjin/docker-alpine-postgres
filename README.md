@@ -1,3 +1,5 @@
+# Minimal PostgreSQL images based on https://hub.docker.com/_/alpine/ Linux
+
 # Supported tags and respective `Dockerfile` links
 
 - [`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.1/Dockerfile)
@@ -6,7 +8,7 @@
 - [`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.4/Dockerfile)
 - [`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.19,postgres:9.2.14,postgres:9.3.10,postgres:9.4.5,postgres:9.5.0)
+[![](https://badge.imagelayers.io/onjin/alpine-postgres:latest.svg)](https://imagelayers.io/?images=onjin/alpine-postgres:9.4.5
 
 # What is PostgreSQL?
 
