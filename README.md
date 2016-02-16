@@ -15,7 +15,7 @@ check at dockerhub:
 - [`9.5.0`, `9.5`, `latest` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
 
 [![](https://badge.imagelayers.io/onjin/alpine-postgres:latest.svg)](https://imagelayers.io/?images=onjin/alpine-postgres:9.1,onjin/alpine-postgres:9.2,onjin/alpine-postgres:9.3,onjin/alpine-postgres:9.4,onjin/alpine-postgres:9.5)
-[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres/caches)
+[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres)
 
 # What is PostgreSQL?
 
