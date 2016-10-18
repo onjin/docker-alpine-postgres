@@ -1,8 +1,8 @@
 #vim: set ft=dockerfile:
-FROM alpine:3.3
+FROM alpine:3.4
 
 ENV PG_MAJOR 9.4
-ENV PG_VERSION 9.4.5
+ENV PG_VERSION 9.4.9
 
 ENV PATH /usr/lib/postgresql/$PG_MAJOR/bin:$PATH
 ENV PGDATA /var/lib/postgresql/data
