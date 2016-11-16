@@ -1,19 +1,17 @@
 # Minimal PostgreSQL images based on Alpine Linux
-[![Docker Stars](https://img.shields.io/docker/stars/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/) [![Docker Pulls](https://img.shields.io/docker/pulls/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/)
+[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres)[![Docker Stars](https://img.shields.io/docker/stars/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/) [![Docker Pulls](https://img.shields.io/docker/pulls/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/)
 
 - https://hub.docker.com/r/onjin/alpine-postgres/
 
 # Supported tags and respective `Dockerfile` links
 
-- [`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile)
-- [`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile)
-- [`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile)
-- [`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.4/Dockerfile)
-- [`9.5.4`, `9.5` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.5/Dockerfile)
-- [`9.6.0`, `9.6`, `latest` (*9.6/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.6/Dockerfile)
+- [`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1 "Get your own image badge on microbadger.com")
+- [`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2 "Get your own image badge on microbadger.com")
+- [`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3 "Get your own image badge on microbadger.com")
+- [`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.4/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4 "Get your own image badge on microbadger.com")
+- [`9.5.4`, `9.5` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.5/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5 "Get your own image badge on microbadger.com")
+- [`9.6.0`, `9.6`, `latest` (*9.6/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.6/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.6.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.6 "Get your own image badge on microbadger.com")
 
-[![](https://badge.imagelayers.io/onjin/alpine-postgres:latest.svg)](https://imagelayers.io/?images=onjin/alpine-postgres:9.1,onjin/alpine-postgres:9.2,onjin/alpine-postgres:9.3,onjin/alpine-postgres:9.4,onjin/alpine-postgres:9.5,onjin/alpine-postgres:9.6)
-[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres)
 
 # What is PostgreSQL?
 
