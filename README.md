@@ -1,5 +1,6 @@
+[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres) [![Docker Stars](https://img.shields.io/docker/stars/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/) [![Docker Pulls](https://img.shields.io/docker/pulls/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/)
+
 # Minimal PostgreSQL images based on Alpine Linux
-[![](https://travis-ci.org/onjin/docker-alpine-postgres.svg)](https://travis-ci.org/onjin/docker-alpine-postgres)[![Docker Stars](https://img.shields.io/docker/stars/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/) [![Docker Pulls](https://img.shields.io/docker/pulls/onjin/alpine-postgres.svg)](https://registry.hub.docker.com/u/onjin/alpine-postgres/)
 
 - https://hub.docker.com/r/onjin/alpine-postgres/
 
