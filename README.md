@@ -81,6 +81,8 @@ These initialization files will be executed in sorted name order as defined by t
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `fig`, that start several containers simultaneously.
 
+Because curren `musl` library version (1.1.16) does not support `LC_COLLATE`, so despite settings `LANG` variable, sorting data will be bytewise (`C`).
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.10.1.
