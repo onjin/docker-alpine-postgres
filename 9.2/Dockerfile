@@ -1,5 +1,5 @@
 #vim: set ft=dockerfile:
-FROM alpine:3.4
+FROM alpine:3.5
 
 ENV PG_MAJOR 9.2
 ENV PG_VERSION 9.2.18
