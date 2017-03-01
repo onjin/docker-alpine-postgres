@@ -2,7 +2,7 @@
 FROM alpine:3.5
 
 ENV PG_MAJOR 9.2
-ENV PG_VERSION 9.2.18
+ENV PG_VERSION 9.2.20
 
 ENV PATH /usr/lib/postgresql/$PG_MAJOR/bin:$PATH
 ENV PGDATA /var/lib/postgresql/data
