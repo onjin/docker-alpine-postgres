@@ -6,12 +6,12 @@
 
 # Supported tags and respective `Dockerfile` links
 
-- [`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1 "Get your own image badge on microbadger.com")
-- [`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2 "Get your own image badge on microbadger.com")
-- [`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3 "Get your own image badge on microbadger.com")
-- [`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.4/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4 "Get your own image badge on microbadger.com")
-- [`9.5.4`, `9.5` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.5/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5 "Get your own image badge on microbadger.com")
-- [`9.6.0`, `9.6`, `latest` (*9.6/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.6/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.6.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.6 "Get your own image badge on microbadger.com")
+- [`9.1.24`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1 "Get your own image badge on microbadger.com")
+- [`9.2.20, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2 "Get your own image badge on microbadger.com")
+- [`9.3.16`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3 "Get your own image badge on microbadger.com")
+- [`9.4.11`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.4/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4 "Get your own image badge on microbadger.com")
+- [`9.5.6`, `9.5` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.5/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5 "Get your own image badge on microbadger.com")
+- [`9.6.2`, `9.6`, `latest` (*9.6/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.6/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.6.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.6 "Get your own image badge on microbadger.com")
 
 
 # What is PostgreSQL?
@@ -96,3 +96,8 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/onjin/docker-alpine-postgres/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Testing dockerfiles
+
+In order to build localy all versions and test whether postgres is installed properly
+run `./test_build.sh` script.
