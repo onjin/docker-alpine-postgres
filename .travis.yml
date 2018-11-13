@@ -23,5 +23,8 @@ script:
 
 after_script:
   - docker images
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - export REPO=onjin/alpine-postgres
+  - 
 
 # vim:set et ts=2 sw=2:
