@@ -7,8 +7,14 @@
 
 - https://hub.docker.com/r/onjin/alpine-postgres/
 
-# Supported tags and respective `Dockerfile` links
 
+# Supported tags
+
+This repository uses `build-arg` to build required postgresql version with single `Dockerfile`
+- `10.14` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:10.14.svg)](https://microbadger.com/images/onjin/alpine-postgres:10.14 "Get your own image badge on microbadger.com")
+
+
+# [deprecated] Supported tags and respective `Dockerfile` links
 - [`9.1.24`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1 "Get your own image badge on microbadger.com")
 - [`9.2.20`, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2 "Get your own image badge on microbadger.com")
 - [`9.3.16`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3 "Get your own image badge on microbadger.com")

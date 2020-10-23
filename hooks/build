@@ -20,4 +20,4 @@ docker build . \
 	--build-arg PG_MAJOR=${PG_MAJOR} \
 	--build-arg PG_VERSION=${PG_VERSION} \
 	--build-arg ALPINE_VERSION=${ALPINE_VERSION} \
-	-t onjin/alpine-postgres:v${PG_VERSION} \
+	-t onjin/alpine-postgres:${PG_VERSION} \
