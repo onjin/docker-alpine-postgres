@@ -11,16 +11,18 @@
 # Supported tags
 
 This repository uses `build-arg` to build required postgresql version with single `Dockerfile`
+- `9.1.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1.24 "Get your own image badge on microbadger.com")
+- `9.2.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2.24 "Get your own image badge on microbadger.com")
+- `9.3.25` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.25.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3.25 "Get your own image badge on microbadger.com")
+- `9.4.26` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.26.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4.26 "Get your own image badge on microbadger.com")
+- `9.5.23` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.23.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5.23 "Get your own image badge on microbadger.com")
+- `9.6.19` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.6.19.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.6.19 "Get your own image badge on microbadger.com")
 - `10.14` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:10.14.svg)](https://microbadger.com/images/onjin/alpine-postgres:10.14 "Get your own image badge on microbadger.com")
+- `11.9` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:11.9.svg)](https://microbadger.com/images/onjin/alpine-postgres:11.9 "Get your own image badge on microbadger.com")
+- `12.4` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:12.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:12.4 "Get your own image badge on microbadger.com")
+- `13.0` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:13.0.svg)](https://microbadger.com/images/onjin/alpine-postgres:13.0 "Get your own image badge on microbadger.com")
 
 
-# [deprecated] Supported tags and respective `Dockerfile` links
-- [`9.1.24`, `9.1` (*9.1/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.1/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1 "Get your own image badge on microbadger.com")
-- [`9.2.20`, `9.2` (*9.2/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.2/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2 "Get your own image badge on microbadger.com")
-- [`9.3.16`, `9.3` (*9.3/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.3/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3 "Get your own image badge on microbadger.com")
-- [`9.4.11`, `9.4` (*9.4/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.4/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4 "Get your own image badge on microbadger.com")
-- [`9.5.6`, `9.5` (*9.5/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.5/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5 "Get your own image badge on microbadger.com")
-- [`9.6.2`, `9.6`, `latest` (*9.6/Dockerfile*)](https://github.com/onjin/docker-alpine-postgres/blob/master/9.6/Dockerfile) [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.6.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.6 "Get your own image badge on microbadger.com")
 
 
 # What is PostgreSQL?
