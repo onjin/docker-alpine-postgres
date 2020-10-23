@@ -22,7 +22,7 @@ function test_build() {
   echo  -n " - testing ${version} # "
   echo -n "Building: "
   echo -n " (Log file: ${log}) "
-  DOCKER_TAG=${version} bash hooks/build > ${log} 2>&1 || BUILD_OK=NO
+#  DOCKER_TAG=${version} bash hooks/build > ${log} 2>&1 || BUILD_OK=NO
 
   if [ ${BUILD_OK} == YES ]; then
     echo -n "Build success"
@@ -33,7 +33,7 @@ function test_build() {
   echo -n " | "
 
   echo -n "Running: "
-  docker run --rm -it -u postgres alpine-postgres:v${version} pg_ctl --help >> ${log} 2>&1 || RUN_OK=NO
+  docker run --rm -it -u postgres onjin/alpine-postgres:${version} psql --version >> ${log} 2>&1 || RUN_OK=NO
 
   if [ ${RUN_OK} == YES ]; then
     echo -n "Run success"
