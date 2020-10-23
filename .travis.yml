@@ -2,20 +2,23 @@ language: bash
 services: docker
 
 env:
-  - VERSION=9.1
-  - VERSION=9.2
-  - VERSION=9.3
-  - VERSION=9.4
-  - VERSION=9.5
-  - VERSION=9.6
+  - DOCKER_TAG=9.1.24
+  - DOCKER_TAG=9.2.24
+  - DOCKER_TAG=9.3.25
+  - DOCKER_TAG=9.4.26
+  - DOCKER_TAG=9.5.23
+  - DOCKER_TAG=9.6.19
+  - DOCKER_TAG=10.14
+  - DOCKER_TAG=11.9
+  - DOCKER_TAG=12.4
+  - DOCKER_TAG=13.0
 
 install:
   - git clone https://github.com/docker-library/official-images.git ~/official-images
 
 before_script:
   - env | sort
-  - cd "$VERSION"
-  - image="alpine-postgres:$VERSION"
+  - image="alpine-postgres:$DOCKER_TAG"
 
 script:
   - docker build -t "$image" .
