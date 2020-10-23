@@ -1,0 +1,23 @@
+#!/bin/bash
+[[ "${DOCKER_TAG}" ]] || { echo "Missing DOCKER_TAG"; exit 1; }
+DEFAULT_ALPINE_VERSION="3.12"
+
+PG_MAJOR=$(echo "${DOCKER_TAG}"|cut -d . -f 1,2)
+PG_VERSION=$(echo "${DOCKER_TAG}"|cut -d\- -f 1)
+
+[[ ${DOCKER_TAG} =~ "${PG_VERSION}-".* ]] && ALPINE_VERSION=$(echo "${DOCKER_TAG}"|cut -d\- -f 2)
+
+[[ ${PG_MAJOR} ]] || { echo "Missing PG_MAJOR from tag '${DOCKER_TAG}'"; exit 1; }
+[[ ${PG_VERSION} ]] || { echo "Missing PG_VERSION from tag '${DOCKER_TAG}'"; exit 1; }
+[[ ${ALPINE_VERSION} ]] || ALPINE_VERSION="${DEFAULT_ALPINE_VERSION}"
+
+echo "[build] DOCKER_TAG=${DOCKER_TAG}"
+echo "[build] PG_MAJOR=${PG_MAJOR}"
+echo "[build] PG_VERSION=${PG_VERSION}"
+echo "[build] ALPINE_VERSION=${ALPINE_VERSION}"
+
+docker build . \
+	--build-arg PG_MAJOR=${PG_MAJOR} \
+	--build-arg PG_VERSION=${PG_VERSION} \
+	--build-arg ALPINE_VERSION=${ALPINE_VERSION} \
+	-t onjin/alpine-postgres:v${PG_VERSION} \

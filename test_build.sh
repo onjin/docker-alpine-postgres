@@ -2,7 +2,7 @@
 
 set -e
 
-ALL_VERSIONS="9.1,9.2,9.3,9.4,9.5,9.6"
+ALL_VERSIONS="9.1.24,9.2.24,9.3.25,9.4.26,9.5.23,9.6.19,10.14,11.9,12.4"
 
 
 # local variables
@@ -22,7 +22,7 @@ function test_build() {
   echo  -n " - testing ${version} # "
   echo -n "Building: "
   echo -n " (Log file: ${log}) "
-  docker build -t alpine-postgres:${version} ${version} > ${log} 2>&1 || BUILD_OK=NO
+  DOCKER_TAG=${version} bash hooks/build > ${log} 2>&1 || BUILD_OK=NO
 
   if [ ${BUILD_OK} == YES ]; then
     echo -n "Build success"
@@ -33,7 +33,7 @@ function test_build() {
   echo -n " | "
 
   echo -n "Running: "
-  docker run --rm -it -u postgres alpine-postgres:${version} pg_ctl --help >> ${log} 2>&1 || RUN_OK=NO
+  docker run --rm -it -u postgres alpine-postgres:v${version} pg_ctl --help >> ${log} 2>&1 || RUN_OK=NO
 
   if [ ${RUN_OK} == YES ]; then
     echo -n "Run success"
