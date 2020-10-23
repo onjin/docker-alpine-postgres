@@ -20,4 +20,6 @@ docker build . \
 	--build-arg PG_MAJOR=${PG_MAJOR} \
 	--build-arg PG_VERSION=${PG_VERSION} \
 	--build-arg ALPINE_VERSION=${ALPINE_VERSION} \
+	--build-arg VCS_REF=`git rev-parse — short HEAD` \
+	--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 	-t onjin/alpine-postgres:${PG_VERSION} \

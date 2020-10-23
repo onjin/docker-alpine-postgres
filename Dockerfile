@@ -5,11 +5,29 @@ FROM alpine:${ALPINE_VERSION}
 ARG PG_MAJOR="13.0"
 ARG PG_VERSION="13.0"
 ARG GOSU_VERSION="1.12"
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+LABEL org.label-schema.build-date=$BUILD_DATE \
+		org.label-schema.name="Minimal PostgreSQL image based on Alpine Linux" \
+		org.label-schema.description="EMinimal PostgreSQL image based on Alpine Linux" \
+		org.label-schema.url="https://github.com/onjin/docker-alpine-postgres" \
+		org.label-schema.vcs-ref=$VCS_REF \
+		org.label-schema.vcs-url="https://github.com/onjin/docker-alpine-postgres" \
+		org.label-schema.vendor="Marek Wywiał" \
+		org.label-schema.version=$PG_VERSION \
+		org.label-schema.schema-version="1.0"
+
 
 ENV PATH /usr/lib/postgresql/${PG_MAJOR}/bin:$PATH
 ENV PGDATA /var/lib/postgresql/data
 
 ENV LANG en_US.utf8
+RUN set -eux; \
+	addgroup -g 70 -S postgres; \
+	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; \
+	mkdir -p /var/lib/postgresql; \
+	chown -R postgres:postgres /var/lib/postgresql
 
 # echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; \
 RUN set -eux; \
