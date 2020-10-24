@@ -10,7 +10,7 @@ ARG VCS_REF
 ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
 		org.label-schema.name="Minimal PostgreSQL image based on Alpine Linux" \
-		org.label-schema.description="EMinimal PostgreSQL image based on Alpine Linux" \
+		org.label-schema.description="Minimal PostgreSQL image based on Alpine Linux" \
 		org.label-schema.url="https://github.com/onjin/docker-alpine-postgres" \
 		org.label-schema.vcs-ref=$VCS_REF \
 		org.label-schema.vcs-url="https://github.com/onjin/docker-alpine-postgres" \
@@ -118,9 +118,8 @@ RUN set -eux; \
 		/usr/local/share/man \
 	; \
 	\
-	postgres --version
-
-RUN  set -eux; \
+	postgres --version \
+	; \
 	apk add gnupg ; \
     gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 ; \
     gpg --list-keys --fingerprint --with-colons | sed -E -n -e 's/^fpr:::::::::([0-9A-F]+):$/\1:6:/p' | gpg --import-ownertrust ; \
