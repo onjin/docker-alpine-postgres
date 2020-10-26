@@ -22,6 +22,9 @@ This repository uses `build-arg` to build required postgresql version with singl
 - `9.2.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2.24 "Get your own image badge on microbadger.com")
 - `9.1.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1.24 "Get your own image badge on microbadger.com")
 
+and more, you can build your own version using `hooks/build` script f.i.:  
+ * `DOCKER_TAG=10.12 ./hooks/build/`
+
 
 
 
