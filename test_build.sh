@@ -2,7 +2,7 @@
 
 set -e
 
-ALL_VERSIONS="9.1.24,9.2.24,9.3.25,9.4.26,9.5.23,9.6.19,10.14,11.9,12.4"
+ALL_VERSIONS="9.3.25,9.4.26,9.5.23,9.6.19,10.14,11.9,12.4,13.0"
 
 
 # local variables
@@ -22,7 +22,7 @@ function test_build() {
   echo  -n " - testing ${version} # "
   echo -n "Building: "
   echo -n " (Log file: ${log}) "
-#  DOCKER_TAG=${version} bash hooks/build > ${log} 2>&1 || BUILD_OK=NO
+  DOCKER_TAG=${version} bash hooks/build > ${log} 2>&1 || BUILD_OK=NO
 
   if [ ${BUILD_OK} == YES ]; then
     echo -n "Build success"

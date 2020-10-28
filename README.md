@@ -19,13 +19,10 @@ This repository uses `build-arg` to build required postgresql version with singl
 - `9.5.23` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.5.23.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.5.23 "Get your own image badge on microbadger.com")
 - `9.4.26` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.4.26.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.4.26 "Get your own image badge on microbadger.com")
 - `9.3.25` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.25.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3.25 "Get your own image badge on microbadger.com")
-- `9.2.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.2.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.2.24 "Get your own image badge on microbadger.com")
-- `9.1.24` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.1.24.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.1.24 "Get your own image badge on microbadger.com")
 
 and more, you can build your own version using `hooks/build` script f.i.:  
- * `DOCKER_TAG=10.12 ./hooks/build/`
-
-
+ * `DOCKER_TAG=10.12 ./hooks/build/` # to build postgresql 10.12 with default alpine as base image 3.12
+ * `DOCKER_TAG=10.12-3.6 ./hooks/build/` # to build postgresql 10.12 with custom alpine 3.10
 
 
 # What is PostgreSQL?
