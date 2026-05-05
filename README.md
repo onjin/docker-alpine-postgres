@@ -11,7 +11,12 @@
 # Supported tags
 
 This repository uses `build-arg` to build required postgresql version with single `Dockerfile`
-- `13.0` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:13.0.svg)](https://microbadger.com/images/onjin/alpine-postgres:13.0 "Get your own image badge on microbadger.com")
+- `18.3` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:18.3.svg)](https://microbadger.com/images/onjin/alpine-postgres:18.3 "Get your own image badge on microbadger.com")
+- `17.9` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:17.9.svg)](https://microbadger.com/images/onjin/alpine-postgres:17.9 "Get your own image badge on microbadger.com")
+- `16.13` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:16.13.svg)](https://microbadger.com/images/onjin/alpine-postgres:16.13 "Get your own image badge on microbadger.com")
+- `15.17` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:15.17.svg)](https://microbadger.com/images/onjin/alpine-postgres:15.17 "Get your own image badge on microbadger.com")
+- `14.22` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:14.22.svg)](https://microbadger.com/images/onjin/alpine-postgres:14.22 "Get your own image badge on microbadger.com")
+- `13.23` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:13.23.svg)](https://microbadger.com/images/onjin/alpine-postgres:13.23 "Get your own image badge on microbadger.com")
 - `12.4` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:12.4.svg)](https://microbadger.com/images/onjin/alpine-postgres:12.4 "Get your own image badge on microbadger.com")
 - `11.9` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:11.9.svg)](https://microbadger.com/images/onjin/alpine-postgres:11.9 "Get your own image badge on microbadger.com")
 - `10.14` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:10.14.svg)](https://microbadger.com/images/onjin/alpine-postgres:10.14 "Get your own image badge on microbadger.com")
@@ -21,8 +26,8 @@ This repository uses `build-arg` to build required postgresql version with singl
 - `9.3.25` - [![](https://images.microbadger.com/badges/image/onjin/alpine-postgres:9.3.25.svg)](https://microbadger.com/images/onjin/alpine-postgres:9.3.25 "Get your own image badge on microbadger.com")
 
 and more, you can build your own version using `hooks/build` script f.i.:  
- * `DOCKER_TAG=10.12 ./hooks/build/` # to build postgresql 10.12 with default alpine as base image 3.12
- * `DOCKER_TAG=10.12-3.6 ./hooks/build/` # to build postgresql 10.12 with custom alpine 3.10
+ * `DOCKER_TAG=18.3 ./hooks/build/` # to build postgresql 18.3 with default alpine as base image 3.22
+ * `DOCKER_TAG=18.3-3.23 ./hooks/build/` # to build postgresql 18.3 with custom alpine 3.23
 
 
 # What is PostgreSQL?

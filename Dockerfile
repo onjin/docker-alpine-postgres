@@ -1,9 +1,10 @@
-ARG ALPINE_VERSION="3.12"
+ARG ALPINE_VERSION="3.23"
 
 FROM alpine:${ALPINE_VERSION}
 
-ARG PG_MAJOR="13.0"
-ARG PG_VERSION="13.0"
+ARG ALPINE_VERSION
+ARG PG_MAJOR="18.3"
+ARG PG_VERSION="18.3"
 ARG GOSU_VERSION="1.12"
 ARG BUILD_DATE
 ARG VCS_REF
@@ -54,7 +55,7 @@ RUN set -eux; \
 		libxml2-dev \
 		libxslt-dev \
 		linux-headers \
-		llvm10-dev clang g++ \
+		llvm-dev clang g++ \
 		make \
 #		openldap-dev \
 		openssl-dev \
@@ -92,11 +93,11 @@ RUN set -eux; \
 		--with-icu \
 		--with-llvm\
 		;\
-	make world ; \
-	make install-world ; \
+	make -j "$(nproc)" ; \
+	make install ; \
 	make -C contrib install ;\
     cd /usr/src/postgresql/contrib ;\
-	make ;\
+	make -j "$(nproc)" ;\
 	make install \
 	; \
 	runDeps="$( \
@@ -121,7 +122,7 @@ RUN set -eux; \
 	postgres --version \
 	; \
 	apk add gnupg ; \
-    gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 ; \
+    gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 ; \
     gpg --list-keys --fingerprint --with-colons | sed -E -n -e 's/^fpr:::::::::([0-9A-F]+):$/\1:6:/p' | gpg --import-ownertrust ; \
     wget -O /usr/local/bin/gosu https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-amd64 ; \
     wget -O /usr/local/bin/gosu.asc https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-amd64.asc ; \
